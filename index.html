@@ -3,17 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="style.css">
     <title>ecommerce product page</title>
 </head>
 <body>
+        <!-- menu in phone -->
+        <div class="menu" id="list-nav">
+            <ul>
+                <li>COLLECTION</li>
+                <li>MEN</li>
+                <li>WOMAN</li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
     <!-- nav bar in head -->
     <nav>
-        <div>
+        <div class="logo">
             <img src="./img/logo.svg" alt="logo">
         </div>
         <!-- menu -->
-        <div>
+        <div class="list-nav">
             <ul>
                 <li>COLLECTION</li>
                 <li>MEN</li>
@@ -23,24 +34,28 @@
             </ul>
         </div>
         <!-- buy and profile -->
-        <div>
+        <div class="data-user">
             <div>
                 <img src="./img/icon-cart.svg" alt="basket">
             </div>
             <div>
-                <img src="./img/image-avatar.png" alt="your profile">
+                <img src="./img/image-avatar.png" alt="your profile" class="profile">
             </div>
+        </div>
+        <div class="icon-menu">
+            <i class="uil uil-list-ul" id="menu"></i>
         </div>
     </nav>
     <hr>
+
     <!-- main part of page -->
     <section>
         <!-- image collection -->
-        <div>
+        <div class="images">
             <div>
-                <img src="./img/icon-cart.svg">
+                <img src="./img/image-product-1.jpg" id="main-img">
             </div>
-            <div>
+            <div id="collection">
                 <img src="./img/image-product-1.jpg" alt="shoes image">
                 <img src="./img/image-product-3.jpg" alt="shoes image">
                 <img src="./img/image-product-2.jpg" alt="shoes image">
@@ -48,42 +63,43 @@
             </div>
         </div>
         <!-- discription part -->
-        <div>
-            <p>SNEAKER COMPANY</p>
-            <h2>
+        <div class="about">
+            <p class="gray">SNEAKER COMPANY</p>
+            <h1>
                 Fall Limited Edition Sneakers
-            </h2>
-            <p>
+            </h1>
+            <p class="gray">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Neque iusto dolorum repellendus temporibus ipsa?
                 Quisquam soluta debitis quaerat nam quis ea.
             </p>
             <!-- price and buy -->
-            <div>
+            <div class="price">
                 <p>
                     $125.00 
                 </p>
-                <p>
+                <p class="percen">
                     50%
                 </p>
             </div>
-            <p>
+            <p class="gray">
                 <del>
                     $250.00
                 </del>
             </p>
-            <div>
-                <div>
-                    <img src="./img/icon-minus.svg" alt="mines">
-                    <p>0</p>
+            <div class="buy">
+                <div class="number">
                     <img src="./img/icon-plus.svg" alt="plus">
+                    <p>0</p>
+                    <img src="./img/icon-minus.svg" alt="mines">
                 </div>
-                <button>
+                <button class="btn">
                     <img src="./img/icon-cart.svg" alt="basket">
                     <p>Add to card</p>
                 </button>
             </div>
         </div>
     </section>
+    <script src="./main.js"></script>
 </body>
 </html>
