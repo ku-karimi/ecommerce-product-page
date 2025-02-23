@@ -198,6 +198,10 @@ section{
     -o-border-radius: 10px;
 }
 
+.btn:focus{
+    outline: none;
+}
+
 /* menu */
 
 html , body , .menu{
@@ -212,7 +216,7 @@ html , body , .menu{
     position: absolute;
     z-index: 2;
     width: 270px;
-    background-color: red;
+    background-color: snow;
     transition: all 0.7s ease-in-out 0s ;
     -webkit-transition: all 0.7s ease-in-out 0s ;
     -moz-transition: all 0.7s ease-in-out 0s ;
@@ -229,6 +233,31 @@ html , body , .menu{
     font-size: 18px;
     text-align: center;
     padding-top: 10px;
+}
+
+/* modal box */
+
+#modal-basket{
+    cursor: pointer;
+}
+
+#modal{
+    display: none;
+    text-align: center;
+    border: 1px solid rgb(197, 197, 197);
+    padding: 10px;
+    margin-right: 130px;
+    width: 260px;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    background-color: snow;
+}
+
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: end;
 }
 
 /* responsiv */
@@ -255,4 +284,10 @@ html , body , .menu{
         height: 50px;
     }
     
+}
+
+@media screen and (max-width: 1000px) {
+    #modal{
+        margin-right: 60px;
+    }
 }
